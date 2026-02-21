@@ -1,0 +1,6 @@
+f = open("C:/Users/Polin/OneDrive/Рабочий стол/IvanovaPhyton/output.txt", "w", encoding="utf-8")
+print("Имя: Полина", file=f)
+print("Возраст: 19 лет", file=f)
+print("Город: Питер", file=f)
+print("Профессия: нету", file=f)
+f.close()
