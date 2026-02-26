@@ -1,0 +1,17 @@
+print("ЗАПОЛНЕНИЕ ЛАБОРАТОРНОГО ЖУРНАЛА")
+full_name = input("Введите ФИО исследователя: ")
+date = input("Введите дату эксперимента: ")
+experiment_name = input("Введите название эксперимента: ")
+conclusion = input("Вывод: ")
+
+with open("journal.txt", "w", encoding="utf-8") as journal:
+    journal.write("+--------------------------------------------------+\n")
+    journal.write("|               Лабораторный журнал                |\n")
+    journal.write("+--------------------------------------------------+\n")
+    journal.write("|ФИО исследователя :"f"{full_name.ljust(31)}|\n")
+    journal.write("|Дата :"f"{date.ljust(44)}|\n")
+    journal.write("|Эксперимент :"f"{experiment_name.ljust(37)}|\n")
+    journal.write("+--------------------------------------------------+\n")
+    journal.write("| Вывод:                                           |\n")
+    journal.write(""f"|{conclusion.ljust(50)}|\n")
+    journal.write("+--------------------------------------------------+\n")
